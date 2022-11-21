@@ -1,0 +1,58 @@
+<div class="container w-100 d-flex flex-column align-items-center">
+  <div class="add-form shadow p-2 mt-5">
+    <div class="text-center">
+      <h1>ADD DETAILS</h1>
+    </div>
+    <form
+      [formGroup]="addForm"
+      (ngSubmit)="addDetails()"
+      id="contact-form"
+      role="form"
+    >
+      <div class="form-group">
+        <label for="">username :</label>
+        <input
+          class="form-control"
+          type="text"
+          id="username"
+          name="username"
+          formControlName="username"
+          placeholder="user Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Phone Number :</label>
+        <input
+          class="form-control"
+          type="number"
+          id="phoneNumber"
+          name="PhoneNumber"
+          formControlName="phoneNumber"
+          placeholder="Mobile Number"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="">email :</label>
+        <input
+          class="form-control"
+          type="email"
+          id="email"
+          name="email"
+          formControlName="email"
+          placeholder="Email Address"
+        />
+      </div>
+      <div class="d-flex">
+        <button type="submit" class="btn btn-success btn-send pt-2 btn-block">
+          Add Details
+        </button>
+        <div class="d-flex">
+          <button type="button" (click)="goBack()" class="btn btn-warning">
+            Back
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

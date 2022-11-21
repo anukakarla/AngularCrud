@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "username": "anusha",
+      "phoneNumber": 7989245861,
+      "email": "anushakakarla15@gmail.com",
+      "id": 1
+    },
+    {
+      "username": "Malli 1",
+      "phoneNumber": 7382488840,
+      "email": "anusha.kakarla15@gmail.com",
+      "id": 2
+    },
+    {
+      "username": "ramu ",
+      "phoneNumber": 789345672,
+      "email": "usha1@gmail.com",
+      "id": 3
+    },
+    {
+      "username": "aisu",
+      "phoneNumber": 67,
+      "email": "aisu1@gmail.com",
+      "id": 4
+    }
+  ]
+}

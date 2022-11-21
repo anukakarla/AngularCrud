@@ -1,0 +1,133 @@
+<div class="container w-100 d-flex flex-column align-items-center">
+  <div class="update-form shadow p-2 mt-5">
+    <div class="text-center">
+      <h1>UPDATE DETAILS</h1>
+    </div>
+    <!-- <div class="row">
+    <div class="col-12 mx-auto">
+      <div class="card mt-2 mx-auto p-4 bg-light">
+        <div class="card-body bg-light">
+          <div *ngIf="selectedgetAll" class="container">
+            <form
+              id="contact-form"
+              role="form"
+              #updateForm="ngForm"
+              (ngSubmit)="updateDetails(updateForm)"
+            >
+              <div class="controls">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">username</label>
+                      <input
+                        type="text"
+                        id="username"
+                        ngModel
+                        [(ngModel)]="selectedgetAll.username"
+                        name="username"
+                        #username="ngModel"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Phone Number</label>
+                      <input
+                        type="number"
+                        id="phoneNumber"
+                        ngModel
+                        [(ngModel)]="selectedgetAll.phoneNumber"
+                        name="phoneNumber"
+                        #phoneNumber="ngModel"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">email : </label><br />
+                      <input
+                        type="email"
+                        id="email"
+                        ngModel
+                        [(ngModel)]="selectedgetAll.email"
+                        name="email"
+                        #email="ngModel"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      type="submit"
+                      class="btn btn-success btn-send pt-2 btn-block"
+                      value="Update Details"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <form
+      *ngIf="selectedgetAll"
+      id="contact-form"
+      role="form"
+      #updateForm="ngForm"
+      (ngSubmit)="updateDetails(updateForm)"
+    >
+      <div class="form-group">
+        <label for="">username</label>
+        <input
+          class="form-control"
+          type="text"
+          id="username"
+          ngModel
+          [(ngModel)]="selectedgetAll.username"
+          name="username"
+          #username="ngModel"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Phone Number</label>
+        <input
+          class="form-control"
+          type="number"
+          id="phoneNumber"
+          ngModel
+          [(ngModel)]="selectedgetAll.phoneNumber"
+          name="phoneNumber"
+          #phoneNumber="ngModel"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">email : </label><br />
+        <input
+          class="form-control"
+          type="email"
+          id="email"
+          ngModel
+          [(ngModel)]="selectedgetAll.email"
+          name="email"
+          #email="ngModel"
+        />
+      </div>
+      <div class="d-flex">
+        <button type="button" (click)="goBack()" class="btn btn-warning">
+          Back
+        </button>
+        <input
+          class="form-control"
+          type="submit"
+          class="btn btn-success btn-send pt-2 btn-block"
+          value="Update Details"
+        />
+      </div>
+    </form>
+  </div>
+</div>
